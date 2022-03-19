@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .row::after{
+                content: "";
+                clear: both;
+                display: block;
+            }
+            [class*="col-"]{
+                float: left;
+                padding: 15px;
+            }
+            html{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            }
+            .header{
+                background-color: darkblue;
+                color: seashell;
+                text-align: center;
+                padding: 15px;
+            }
+            .menu ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .menu li{
+                padding: 8px;
+                margin-bottom: 7px;
+                background-color: dodgerblue;
+                text-align: center;
+                border-radius: 50%;
+                color: rgb(238, 247, 255);
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+
+            }
+            .menu li:hover{
+                background-color: darkblue;
+            }
+            .aside{
+                background-color: dodgerblue;
+                padding: 15px;
+                color: white;
+                text-align: center;
+                font-size: 14px;
+                box-shadow: black,beige;
+            }
+            .footer{
+                background-color: darkblue;
+                color: white;
+                text-align: center;
+                font-size: 12px;
+                padding: 15px;
+            }
+            .revisi img{
+                margin: auto;
+                display: block;
+            }
+            /* For desktop: */
+            .col-1{width: 8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width: 58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 83.33%;}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+
+            @media only screen and (max-width: 768px){
+                /* For Mobile Phones: */
+                [class*="col-"]{
+                    width: 100%;
+                }
+            }
+
+        </style>
+    </head>
+    <body style="background-color: lightblue;">
+        <div class="header">
+            <h1>ELD Tech</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-2 menu">
+                <ul>
+                    <a href="#Laptop"><li>Laptop</li></a>
+                    <a href="#Handphone"><li>Handphone</li></a>
+                    <a href="#Keyboard"><li>Keyboard</li></a>
+                    <a href="#Headset"><li>Headset</li></a>
+                    <a href="#Mouse"><li>Mouse</li></a>
+                    
+                </ul>
+            </div>
+            <div class="col-7">
+                <h1>ELD Tech</h1>
+                <p>ELD Tech adalah sebuah toko yang menjual barang-barang elektronik. </p>
+            
+             </div>
+            <div class="col-3 right">
+                <div class="aside">
+                    <h2>Kontak</h2>
+                    <img src="img/LogoIG.png" width="30px">
+                    <a href="https://www.instagram.com/g_david02/?hl=en" target="_blank" style="color: white;">Instagram</a>
+                    <br>
+                    <br>
+                   
+                    <img src="img/LogoFB.png"  width="30px">
+                    <a href="https://www.facebook.com/profile.php?id=100011009881040" target="_blank" style="color: white;">Facebook</a>
+                    <br>
+                    <br>
+                   
+                    <img src="img/LogoYT.png"  width="30px">
+                    <a href="https://www.youtube.com/channel/UClvxYiWF6jbQyEUhm0dcg7g" target="_blank" style="color: white;" >Youtube</a>
+                    <br>
+                    <br>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>Alamat</h2>
+            <p>Jln. Angsana No.2 Township, Tanjung Enim, Sumatera Selatan.</p>
+        </div>
+
+        <section id="Laptop">
+        <div class="col-2 left" style="background-color: dodgerblue;">
+            <img src="img/laptop_PNG101835.png" width="190px">
+            <br>
+            <p style="text-align: center;background-color: darkblue; color: white; font-family: Arial, Helvetica, sans-serif;">Rp.2.500.000 - Rp.15.000.000</p>
+        </div>
+        <div class="col-7 center">
+            
+            <h1>Laptop</h1>
+            <p>Laptop menengah umumnya memiliki layar berukuran 15inch. Laptop ini umumnya memiliki prosesor Dual-Core CPU, seperti prosesor Core i3 , dengan RAM antara 3 GB sampai 6 GB, harddisk 250 GB atau lebih besar dan memiliki slot DVD.</p>
+            </div>
+            <div class="col-12" style="background-color: darkblue;">
+
+            </div>
+        </section>  
+
+        <section id="Handphone">
+        <div class="col-2 left" style="background-color: dodgerblue;">
+            <div class="revisi"><img src="img/hp.png" width="70px"></div>
+            <br>
+            <p style="text-align: center; color: white; font-family: Arial, Helvetica, sans-serif;">Rp.1.500.000 - Rp.10.000.000</p>
+        </div>
+        <div class="col-7 center">
+            
+            <h1>Handphone</h1>
+            <p>ditenagai chipset MediaTek Dimensity 700 5G berikut RAM 4 GB dan memori internal 128 GB yang bisa diperluas dengan microSD hingga 1 TB. Spesifikasi lainnya mencakup konektivitas 5G, baterai 5.000 mAh, serta sistem operasi Android 11 yang dibalut antarmuka One UI Core 3.1</p>
+            </div>
+            <div class="col-12" style="background-color: darkblue;">
+
+            </div>
+        </section>
+         
+
+        <section id="Keyboard">
+            <div class="col-2 left" style="background-color: dodgerblue;">
+            <div class="revisi"><img src="img/KB.png" width="220px"> </div>
+            <br>
+            <p style="text-align: center; color: white; font-family: Arial, Helvetica, sans-serif;">Rp.500.000 - Rp.1.500.000</p>
+            </div>
+            <div class="col-7 center">
+            
+            <h1>Keyboard</h1>
+            <p>keyboard multiperangkat yang nyaman dan menghemat ruang yang menghadirkan pengetikan yang lebih baik ke laptop, tablet, atau telepon-mu. Pairing maksimal 3 perangkat dan berganti-ganti mengetik dengan mulus di antara ketiganya. Sangat awet dan dengan daya tahan baterai yang panjang, keyboard multi-tasking yang didesain dengan cermat ini adalah apa yang dibutuhkan semua orang untuk menyelesaikan lebih banyak pekerjaan di mana saja.</p>
+            </div>
+            <div class="col-12" style="background-color: darkblue;">
+
+            </div>
+        </section>  
+
+        <section id="Headset">
+            <div class="col-2 left" style="background-color: dodgerblue;">
+            <div class="revisi"><img src="img/Hs.png" width="180px"></div>
+            <br>
+            <p style="text-align: center; color: white; font-family: Arial, Helvetica, sans-serif;">Rp.250.000 - Rp.1.200.000</p>
+            </div>
+            <div class="col-7 center">
+            
+            <h1>Headset</h1>
+            <p>Headset ini memiliki kualitas suara yang baik dengan dukungan 7.1 Surround Sound yang membuat pengalaman bermain kamu semakin seru. Untuk kualitas bahan dan modelnya pun tak kalah dengan headset gaming mahal.</p>
+             </div>
+             <div class="col-12" style="background-color: darkblue;">
+
+            </div>
+        </section> 
+
+        <section id="Mouse">
+            <div class="col-2 left" style="background-color: dodgerblue;">
+            <div class="revisi"><img src="img/MS.png" width="100px"></div>
+            <br>
+            <p style="text-align: center; color: white; font-family: Arial, Helvetica, sans-serif;">Rp.250.000 - Rp.1.000.000</p>
+            </div>
+            <div class="col-7 center">
+            
+            <h1>Mouse</h1>
+            <p>merk mouse gaming terbaik yang memiliki desain ergonomis yang dapat memberi dukungan pada genggaman tangan saat bermain game.
+
+                Dengan material karet yang nyaman membuat jenis mouse gaming ini nyaman digunakan. Brand mouse gaming ini cocok untuk kamu yang punya budget minim, namun ingin pengalaman gaming lebih maksimal.</p>
+            </div>
+            <div class="col-12" style="background-color: darkblue;">
+
+            </div>
+        </section>  
+    </body>
+</html>
